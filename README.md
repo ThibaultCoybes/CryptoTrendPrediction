@@ -9,7 +9,6 @@ Ce projet implémente un modèle de prédiction de tendance basé sur les articl
 - [Installation](#installation)
 - [Utilisation](#utilisation)
 - [Explication du code](#explication-du-code)
-- [Licence](#licence)
 
 ## Contexte du projet
 
@@ -36,7 +35,9 @@ Créez un fichier .env à la racine de votre projet et ajoutez-y votre clé API 
 
 env
 API_KEY=your_huggingface_api_key
-Utilisation
+
+## Utilisation
+
 Démarrer la prédiction
 Chargez les articles à partir du fichier dogecoin_articles_perte.json dans le dossier racine du projet.
 Lancez le processus de prédiction en exécutant la commande suivante :
@@ -50,7 +51,9 @@ Le modèle est sauvegardé localement après chaque entraînement dans le dossie
 javascript
 await model.loadModel();  // Charge le modèle sauvegardé
 await model.saveModel();  // Sauvegarde le modèle après l'entraînement
-Explication du code
+
+##Explication du code
+
 Le modèle suit un flux de travail basé sur l'apprentissage par renforcement avec la mémorisation des expériences pour ajuster ses actions en fonction de la récompense qu'il reçoit :
 
 Analyse de sentiment : Les sentiments des articles sont extraits à l'aide de l'API Hugging Face pour évaluer si un article est positif, négatif ou neutre.
