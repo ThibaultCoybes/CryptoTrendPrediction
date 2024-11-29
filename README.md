@@ -52,7 +52,7 @@ javascript
 await model.loadModel();  // Charge le modèle sauvegardé
 await model.saveModel();  // Sauvegarde le modèle après l'entraînement
 
-##Explication du code
+## Explication du code
 
 Le modèle suit un flux de travail basé sur l'apprentissage par renforcement avec la mémorisation des expériences pour ajuster ses actions en fonction de la récompense qu'il reçoit :
 
