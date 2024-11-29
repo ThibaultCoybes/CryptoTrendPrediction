@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Model saved data
+/model/
+
+# Logs
+logs/
+
+# Environnement de développement
+.env
+
+# Fichiers générés automatiquement
+dist/
+build/
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+
+# IDE configuration
+.vscode/
+.idea/
+
+# Fichiers de logs
+*.log
